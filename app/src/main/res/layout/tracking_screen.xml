@@ -23,11 +23,12 @@
             android:layout_height="70dp"
             android:layout_centerHorizontal="true"/>
         <TextView
+            android:id="@+id/tvTemperature"
             android:layout_below="@+id/imgTemperature"
             android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="25 °C"
+            android:text=".. °C"
             android:textSize="20sp"/>
     </RelativeLayout>
 
@@ -50,11 +51,12 @@
             android:src="@mipmap/humidity" />
 
         <TextView
+            android:id="@+id/tvHumidity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imgHumidity"
             android:layout_centerHorizontal="true"
-            android:text="20 %"
+            android:text=".. %"
             android:textSize="20sp" />
     </RelativeLayout>
 
@@ -75,11 +77,12 @@
             android:layout_height="70dp"
             android:layout_centerHorizontal="true"/>
         <TextView
+            android:id="@+id/tvSound"
             android:layout_below="@+id/imgSound"
             android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="25 db"
+            android:text=".. db"
             android:textSize="20sp"/>
     </RelativeLayout>
 
@@ -100,11 +103,12 @@
             android:layout_height="70dp"
             android:layout_centerHorizontal="true"/>
         <TextView
+            android:id="@+id/tvLight"
             android:layout_below="@+id/imgLight"
             android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1000 lux"
+            android:text=".. lux"
             android:textSize="20sp"/>
     </RelativeLayout>
 
@@ -115,6 +119,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
         android:text="Connect"
+        android:background="@color/gray"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,6 +132,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:text="Disconnect"
+        android:background="@color/gray"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
